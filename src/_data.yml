@@ -1,0 +1,17 @@
+lang: en
+
+home:
+  welcome: Welcome goes here
+  intro: Intro goes here
+
+menu_links: []
+extra_head: []
+
+# Metas plugin https://lume.land/plugins/metas/#description
+metas:
+  site: Frank Harris
+  description: "=home.intro"
+  title: "=title"
+  image: "=image"
+  twitter: "@hirefrank"
+  lang: en

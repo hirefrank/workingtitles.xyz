@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="{{ it.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ it.title || metas.title }} - {{ metas.site }}</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metas.site }}">
+    <link rel="alternate" href="/feed.json" type="application/json" title="{{ metas.site }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="canonical" href="{{ url |> url(true) }}">
+    {{ it.extra_head?.join("\n") }}
+  </head>
+  <body class="bg-canvas dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <nav class="bg-gray-100 dark:bg-gray-800 p-4 flex justify-center">
+      <ul class="flex space-x-4 max-w-4xl w-full justify-center">
+      {{- for entry of search.pages("menu.visible=true", "menu.order") }}
+        <li>
+          <a href="{{ entry.url }}" class="hover:text-blue-600 dark:hover:text-blue-400{{ if entry.url == url }} font-semibold{{ /if }}"{{ if entry.url == url }} aria-current="page"{{ /if }}>
+            {{ entry.menu.title || entry.title }}
+          </a>
+        </li>
+      {{ /for }}
+      {{- for link of it.menu_links }}
+        <li>
+          <a href="{{ link.href }}" class="hover:text-blue-600 dark:hover:text-blue-400">
+            {{ link.text }}
+          </a>
+        </li>
+      {{ /for }}
+      </ul>
+    </nav>
+
+    <main class="container max-w-4xl mx-auto px-4 py-8 {{ it.bodyClass }}">
+      {{ content }}
+    </main>
+
+    <!-- Current page: {{ url }} -->
+  </body>
+</html>
