@@ -27,7 +27,6 @@ p { @apply text-2xl mb-6 font-sans font-light }
 }
 
 /* font family */
-/* latin */
 @font-face {
   font-family: 'DM Sans';
   font-style: italic;
@@ -44,7 +43,6 @@ p { @apply text-2xl mb-6 font-sans font-light }
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
 @font-face {
   font-family: 'Jost';
   font-style: normal;
@@ -53,93 +51,3 @@ p { @apply text-2xl mb-6 font-sans font-light }
   src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-/* nav li:not(:last-child)::after {
-  content: "\b7\a0";
-} */
-
-
-/* Jost font setup */
-/* .jost {
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-style: var(--font-style, normal);
-  font-weight: var(--font-weight, 400);
-} */
-
-/* Font weight utility classes */
-/* .font-jost-thin { --font-weight: 100; }
-.font-jost-extralight { --font-weight: 200; }
-.font-jost-light { --font-weight: 300; }
-.font-jost-normal { --font-weight: 400; }
-.font-jost-medium { --font-weight: 500; }
-.font-jost-semibold { --font-weight: 600; }
-.font-jost-bold { --font-weight: 700; }
-.font-jost-extrabold { --font-weight: 800; }
-.font-jost-black { --font-weight: 900; } */
-
-/* Font style utility classes */
-/* .font-jost-normal { --font-style: normal; }
-.font-jost-italic { --font-style: italic; } */
-
-/* search bar */
-/* :root {
-  --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: #ea580c;
-  --pagefind-ui-text: #ffffff;
-  --pagefind-ui-background: #131b1e;
-  --pagefind-ui-border: #c2410c;
-  --pagefind-ui-tag: #eeeeee;
-  --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: 9px;
-  --pagefind-ui-image-border-radius: 7px;
-  --pagefind-ui-image-box-ratio: 3 / 2;
-  --pagefind-ui-font: 'Inconsolata', monospace;
-} */
-
-/* font family */
-/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-html,
-body {
-  font-family: 'Inconsolata', monospace;
-} */
-
-/* blog markdown */
-/* .blog h2 {
-  font-size: 1.125rem;
-  color: #ea580c;
-  font-weight: 700;
-  margin-bottom: 0.125rem;
-  margin-top: 1.25rem;
-  text-decoration-line: underline;
-  text-underline-offset: 2px;
-}
-.mdTitle {
-  text-decoration-line: underline;
-  text-underline-offset: 5px;
-} */
-
-
-
-/* Custom components */
-/* @import "css/navbar.css";
-@import "css/page.css";
-@import "css/post-list.css";
-@import "css/post.css"; */
-
-/* Make the links black */
-/* :root {
-  --color-link: var(--color-base);
-  --color-link-hover: var(--color-dim);
-} */
-
-/* Page layout */
-/* main {
-  padding: var(--row-gap-medium) 0;
-  max-width: min(100% - 15vw, 45em);
-  margin: 0 auto;
-
-  & > :first-child {
-    margin-top: 0;
-  }
-} */

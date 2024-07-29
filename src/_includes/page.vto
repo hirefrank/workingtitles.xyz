@@ -1,12 +1,16 @@
 ---
 layout: base.vto
 ---
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ it.title }}</h1>
+<article>
+  <h1>
+    {{ if it.alttitle }}
+      {{ it.alttitle }}
+    {{ else }}
+      {{ it.title }}
+    {{ /if }}
+  </h1>
 
-    {{ it.subtitle |> md }}
-  </header>
+ {{ if it.subtitle }} <h2>{{ it.subtitle }}</h2>{{ /if }}
 
   <div class="post-body">
     {{ content }}
