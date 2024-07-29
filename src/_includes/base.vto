@@ -14,18 +14,9 @@
     <header class="mx-auto py-4 px-6 {{ if '/' != url }} bg-gray-100 shadow{{ /if }}">
       <nav class="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/" class="text-3xl font-light font-mark tracking-tight text-zinc-900">
-          {{ metas.site }}
+          {{ metas.site.toLowerCase() }}
         </a>
         <ul class="flex items-center justify-end space-x-4 list-none">
-        {{ if '/' != url }}
-        {{- for entry of search.pages("menu.visible=true", "menu.order") }}
-          <li class="hidden md:inline-block">
-            <a href="{{ entry.url }}" class="text-gray-800 hover:text-sky-600 {{ if entry.url == url }} font-semibold{{ /if }}"{{ if entry.url == url }} aria-current="page"{{ /if }}>
-              {{ entry.menu.title || entry.title }}
-            </a>
-          </li>
-        {{ /for }}
-        {{ /if }}
           <li class="pl-2">
             <button class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" data-cal-link="hirefrank/complimentary-consultation" data-cal-namespace="complimentary-consultation" data-cal-config='{"layout":"month_view"}'>
                 Book a <span class="hidden md:inline">free</span> consultation
@@ -35,13 +26,14 @@
       </nav>
     </header>
 
-    <main class="px-6 container max-w-5xl mx-auto justify-center flex h-[calc(100vh-9rem)] {{ if '/' != url }} pt-10 {{ /if }}">
+
+    <main class="px-6 container max-w-5xl mx-auto justify-center flex min-h-[calc(100vh-10rem)] {{ if '/' != url }} pt-10 {{ /if }} max-h-auto">
       {{ content }}
     </main>
 
     <footer class="container max-w-4xl mx-auto text-gray-600 text-center my-4 flex flex-col">
       <div class="flex items-center justify-center">
-        <span class="pr-2">&copy; {{ new Date().getFullYear() }} Working Titles</span>
+        <span>&copy; {{ new Date().getFullYear() }} {{ metas.site }}</span>
         <ul class="flex space-x-4 ml-4">
           {{- for entry of search.pages("menu.visible=true", "menu.order") }}
             <li>

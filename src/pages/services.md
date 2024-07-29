@@ -1,12 +1,14 @@
 ---
 layout: page.vto
 title: Services
-subtitle: From coaching to go-to-market motions, we have you covered.
+subtitle: Personalized, one-on-one sessions.
 url: /services/
 menu:
-  visible: true
+  visible: hidden
   order: 2
 ---
+
+I've intentionally named my practice "Working Titles" because our craft is always evolving.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
   <div class="h-auto flex items-start">

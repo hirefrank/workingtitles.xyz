@@ -8,6 +8,8 @@ menu:
   order: 3
 ---
 
+Let me know how I can help.
+
 <form action="https://api.staticforms.xyz/submit" method="post" class="space-y-4 text-xl">
     <input type="text" name="name" placeholder="Your Name" class="border rounded p-2 w-full">
     <input type="text" name="email" placeholder="Your Email" class="border rounded p-2 w-full" />
@@ -17,5 +19,5 @@ menu:
     <input type="hidden" name="subject" value="Contact us form on Working Titles" />
     <input type="hidden" name="replyTo" value="frank@workingtitles.xyz">
     <input type="hidden" name="redirectTo" value="/message-sent">
-    <input type="submit" value="Send" class="bg-blue-500 text-white rounded p-2 w-full cursor-pointer hover:bg-blue-600" />
+    <input type="submit" value="Send" class="bg-sky-500 text-white rounded p-2 w-full cursor-pointer hover:bg-sky-700" />
 </form>

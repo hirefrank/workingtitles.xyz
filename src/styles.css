@@ -7,10 +7,20 @@
 } */
 
 
-h1 { @apply text-4xl font-mark font-light mb-6 mt-6 }
-h2 { @apply text-4xl font-sans font-light mb-6 }
-h3 { @apply text-2xl font-sans font-semibold }
-p { @apply text-2xl mb-6 font-sans font-light }
+h1 { @apply text-4xl font-mark font-semibold mb-6 mt-6 leading-normal }
+h2 { @apply text-4xl font-sans font-light mb-6 leading-normal }
+h3 { @apply text-2xl font-sans font-semibold my-8 leading-normal }
+p { @apply text-2xl mb-6 font-sans font-light leading-normal }
+
+
+article p a {
+  @apply border-dotted border-b-2 border-zinc-700 text-zinc-700
+}
+
+article p a:hover {
+  @apply border-dotted border-b-2 border-sky-400 text-sky-600
+}
+article li { @apply list-disc ml-6 }
 
 @layer components {
   .checkmark-list {
