@@ -8,14 +8,14 @@ menu:
   order: 1
 ---
 
-I've seen and felt the unique challenges product leaders face firsthand: constant ambiguity and loneliness at the top. As we climb, we find fewer peers to bounce ideas off. Yet, everyone needs support to excel — even writers have editors.
+I've seen and felt the unique challenges product leaders face: constant ambiguity and loneliness at the top. As we climb, we find fewer peers to bounce ideas off. Yet, everyone needs support to excel — even writers have editors.
 
-That's why I created Working Titles. The name speaks to our ever-evolving craft. We're all works in progress, continuously refining our skills.
+That's why I created Working Titles. We're all works in progress, continuously refining our skills.
 
 Seeking a trusted sounding board? Navigating ambiguity? Adapting to industry shifts? You don't have to do it alone. We'll cut through the noise, sharpen your skills, and amplify your impact.
 
 ### Areas of Speciality
-No cookie-cutter process &mdash; we'll tailor to your needs.
+No cookie-cutter process &mdash; I'll tailor to your needs.
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
     <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
