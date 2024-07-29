@@ -1,12 +1,18 @@
 ---
-layout: layouts/base.vto
-bodyClass: body-home
+layout: base.vto
 title: Home
 ---
 
-<header>
-  <h1 class="text-6xl font-sans font-normal mb-10">{{ home.welcome }}</h1>
-  <p class="text-3xl font-sans font-light mb-10">{{ home.intro }}</p>
-</header>
-
-<hr>
+<div class="flex flex-col items-center justify-center">
+  <p class="text-center md:text-6xl text-5xl leading-tight">
+    {{ home.welcome }}
+  </p>
+  <div class="flex space-x-4 font-sans font-semibold">
+    <a href="/about" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-700 transition">
+      Learn more
+    </a>
+    <a href="/services" class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded">
+      Services
+    </a>
+  </div>
+</div>

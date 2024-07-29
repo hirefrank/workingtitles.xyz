@@ -9,8 +9,8 @@ export default function () {
 
     // Add remote files
     const files = [
-      "_includes/layouts/base.vto",
-      "_includes/layouts/page.vto",
+      "_includes/base.vto",
+      "_includes/page.vto",
       "_data.yml",
       "404.md",
       "index.vto",

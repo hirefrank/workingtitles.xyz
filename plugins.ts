@@ -5,6 +5,7 @@ import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import resolveUrls from "lume/plugins/resolve_urls.ts";
 import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import tailwindColors from "tailwind/colors";
 
 import "lume/types.ts";
 
@@ -15,22 +16,15 @@ export default function () {
   return (site: Lume.Site) => {
     site.use(tailwindcss({
         options: {
-          content: [
-            "./_site/**/*.{html,md,js,tsx}",
-            "./src/**/*.{html,md,js,tsx}",
-            "./_includes/**/*.{html,md,js,tsx}",],
+          // content: [
+          //   "./src/**/*.{md,vto}",
+          //   "./src/_includes/*.{md,vto}",
+          // ],
           theme: {
-            colors: {
-              'canvas': 'hsl(var(--hue, 220), 85%, 95%)',
-              'dark-red': 'hsl(9, 46%, 49%)',
-              'accent': 'hsl(8, 58%, 52%)',
-              'on-canvas': 'hsl(var(--hue, 220), 10%, 10%)',
-              'on-canvas-dim': 'hsl(var(--hue, 220), 20%, 35%)',
-              'on-canvas-nyte': 'hsl(var(--hue, 220), 10%, 90%)',
-            },
+            colors: tailwindColors,
             fontFamily: {
-              sans: ["Jost", "sans-serif"],
-              serif: ["Merriweather", "serif"],
+              sans: ["Jost"],
+              mark: ["DM Sans"],
             },
           },
           plugins: [],
@@ -42,9 +36,8 @@ export default function () {
       .use(resolveUrls())
       .use(slugifyUrls())
       .use(sitemap())
-      .copy("fonts")
       .copy("favicon.png")
-      .copy("uploads")
+      .copy("images")
       .mergeKey("extra_head", "stringArray")
       .preprocess([".md"], (pages) => {
         for (const page of pages) {

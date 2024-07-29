@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.vto
+layout: page.vto
 title: Contact
 url: /contact/
 menu:
@@ -7,4 +7,3 @@ menu:
   order: 3
 ---
 
-Contact

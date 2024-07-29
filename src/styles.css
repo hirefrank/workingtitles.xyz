@@ -2,11 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --hue: 26;
+} */
+
+
+h1 { @apply text-4xl font-mark font-light mb-6 mt-6 }
+h2 { @apply text-4xl font-sans font-light mb-6 }
+h3 { @apply text-2xl font-sans font-semibold }
+p { @apply text-2xl mb-6 font-sans font-light }
+
+@layer components {
+  .checkmark-list {
+    @apply list-none pl-2 max-w-4xl w-full text-2xl font-light;
+  }
+
+  .checkmark-list li {
+    @apply flex items-center;
+  }
+
+  .checkmark {
+    @apply h-6 w-6 text-gray-500 mr-2;
+  }
 }
 
 /* font family */
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 100 1000;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2Fp2ywxg089UriCZa4Hz-D.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 100 1000;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 @font-face {
   font-family: 'Jost';
   font-style: normal;
@@ -16,9 +54,9 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-nav li:not(:last-child)::after {
-  content: "\a0\b7\a0";
-}
+/* nav li:not(:last-child)::after {
+  content: "\b7\a0";
+} */
 
 
 /* Jost font setup */

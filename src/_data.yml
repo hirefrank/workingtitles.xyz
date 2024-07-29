@@ -1,17 +1,17 @@
 lang: en
 
 home:
-  welcome: Welcome goes here
-  intro: Intro goes here
+  intro: Coaching and advisory services to refine your story
+  welcome: A hands-on coaching practice for product leaders in technology.
 
-menu_links: []
-extra_head: []
+menu_links:
+  - href: "/about"
+    text: "About Us2"
 
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
-  site: Frank Harris
+  site: working titles
   description: "=home.intro"
   title: "=title"
   image: "=image"
-  twitter: "@hirefrank"
   lang: en
