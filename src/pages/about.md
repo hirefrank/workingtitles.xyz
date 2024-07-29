@@ -1,46 +1,47 @@
 ---
 layout: page.vto
 title: About
-subtitle: A former engineer, designer, and product executive with early and late stage experience in B2B and B2C.
+subtitle: 🙋‍♂️ Hi, I'm Frank Harris &mdash; an accomplished leader with over 20 years of experience leading high-performance software teams.
 url: /about/
 menu:
-  visible: true
+  visible: false
   order: 1
 ---
 
-🙋‍♂️ Hi, I'm [Frank Harris](https://linkedin.com/in/hirefrank), an accomplished leader with over 20 years of experience building software  and leading high-performance teams.
+I've seen and felt the unique challenges product leaders face firsthand: constant ambiguity and loneliness at the top. As we climb, we find fewer peers to bounce ideas off. Yet, everyone needs support to excel — even writers have editors.
+
+That's why I created Working Titles. The name speaks to our ever-evolving craft. We're all works in progress, continuously refining our skills.
+
+Seeking a trusted sounding board? Navigating ambiguity? Adapting to industry shifts? You don't have to do it alone. We'll cut through the noise, sharpen your skills, and amplify your impact.
+
+### Areas of Speciality
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
-    <div class="flex items-center justify-center h-32 bg-zinc-300">
+    <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
         <p class="text-center font-normal mb-0">Leadership Coaching</p>
     </div>
-    <div class="flex items-center justify-center h-32 bg-zinc-300 ">
+    <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
         <p class="text-center font-normal mb-0">Product Strategy</p>
     </div>
-    <div class="flex items-center justify-center h-32 bg-zinc-300 ">
+    <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
         <p class="text-center font-normal mb-0">Organizational Design</p>
     </div>
-    <div class="flex items-center justify-center h-32 bg-zinc-300 ">
-        <p class="text-center font-normal mb-0">Go-to-Market/Pricing & Packaging</p>
+    <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
+        <p class="text-center font-normal mb-0">Go-to-Market & Pricing</p>
     </div>
 </div>
 
- <!-- I live in Brooklyn, NY with my wife, two young daughters, and an Italian truffle dog that isn't of much use in the city. -->
-
-<!--Most recently, I was the VP of Product, Platform at [Slack 🙌](https://www.slack.com/). I've also led product teams at [InVision 🎨](https://www.invision.com/), [Betterment 💸](https://www.betterment.com/), and [Etsy 🧶](https://www.etsy.com/).-->
-
-
-
-  <div class="flex space-x-4 font-sans font-semibold mb-10">
-    <a href="/services" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-700 transition shadow">
-      Book a free consultation
-    </a>
-    <a href="/services" class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-      Contact me
-    </a>
-  </div>
+<div class="flex space-x-4 font-sans font-semibold mb-10">
+  <a href="/services" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-700 transition shadow">
+    Book a free consultation
+  </a>
+  <a href="/services" class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+    Contact me
+  </a>
+</div>
 
 ### Career Highlights
+ I'm a former engineer, designer, and product executive with early and late stage experience in B2B, B2C, and regulated industries. [LinkedIn](https://linkedin.com/in/hirefrank)
 
 - **2021-24, Slack** - Led Developer/Admin Experience PM team for Automation Platform, achieving target pipeline within 90 days of launch, directed go-to-market, pricing, and partner ecosystem strategies; completed 100+ customer calls to identify pain points and present roadmaps
 

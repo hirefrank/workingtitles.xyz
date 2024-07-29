@@ -4,7 +4,7 @@ title: Services
 subtitle: Personalized, one-on-one sessions.
 url: /services/
 menu:
-  visible: hidden
+  visible: false
   order: 2
 ---
 

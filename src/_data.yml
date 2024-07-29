@@ -5,8 +5,10 @@ home:
   welcome: A hands-on coaching practice built for product leaders in tech.
 
 menu_links:
-  - href: "/about"
-    text: "About Us2"
+  - href: "/contact"
+    text: "Contact"
+  - href: "https://linkedin.com/in/hirefrank"
+    text: "LinkedIn"
 
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
