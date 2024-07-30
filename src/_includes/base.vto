@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ it.title || metas.title }} - {{ metas.site }}</title>
-
     <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="canonical" href="{{ url |> url(true) }}">
   </head>
   <body class="bg-neutral-200">
@@ -32,7 +34,7 @@
     </header>
 
 
-    <main class="px-6 container max-w-5xl mx-auto justify-center flex min-h-[calc(95vh-9rem)] md:min-h-[calc(100vh-10rem)] {{ if '/' != url }} pt-10 {{ /if }} max-h-auto">
+    <main class="px-6 container max-w-5xl mx-auto justify-center flex min-h-[calc(95vh-9rem)] md:min-h-[calc(100vh-10rem)] {{ if '/' != url }} pt-4 md:pt-8 {{ /if }} max-h-auto">
       {{ content }}
     </main>
 

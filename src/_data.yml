@@ -2,7 +2,7 @@ lang: en
 
 home:
   intro: Coaching and advisory services to refine your story
-  welcome: Hands-on coaching for product leaders in tech
+  welcome: Hands-on coaching and advising for product leaders in tech
 
 menu_links:
   - href: "/contact"
@@ -13,7 +13,7 @@ menu_links:
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
   site: Working Titles
-  description: "=home.intro"
+  description: "=home.welcome"
   title: "=title"
   image: "=image"
   lang: en

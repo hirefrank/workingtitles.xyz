@@ -36,8 +36,7 @@ export default function () {
       .use(resolveUrls())
       .use(slugifyUrls())
       .use(sitemap())
-      .copy("favicon.png")
-      .copy("images")
+      .copy("static", "./")
       .mergeKey("extra_head", "stringArray")
       .preprocess([".md"], (pages) => {
         for (const page of pages) {
