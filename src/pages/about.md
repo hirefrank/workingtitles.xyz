@@ -36,7 +36,7 @@ No cookie-cutter process &mdash; I'll tailor to your needs.
   <a href="/services" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-700 transition shadow">
     Book a free consultation
   </a>
-  <a href="/services" class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+  <a href="/contact" class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
     Contact me
   </a>
 </div>
