@@ -3,6 +3,7 @@ import tailwindColors from "tailwind/colors";
 import postcss from "lume/plugins/postcss.ts";
 import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import basePath from "lume/plugins/base_path.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import robots from "lume/plugins/robots.ts";
 
@@ -31,6 +32,7 @@ export default function () {
       }))
       .use(postcss())
       .use(metas())
+      .use(basePath())
       // .use(minifyHTML())
       .use(robots())
       .use(sitemap({

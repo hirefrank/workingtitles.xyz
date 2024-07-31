@@ -1,5 +1,4 @@
 export const layout = "_includes/simple.vto";
-const welcome = "Hands-on coaching and advising for product leaders in tech";
 
 export default function* () {
   yield {
@@ -9,10 +8,8 @@ export default function* () {
   },
   yield {
     url: "/index.html",
-    content: welcome,
-    title: "Home",
+    title: "Working Titles",
     mug: true,
     indexable: true,
-    metas: { description: welcome }
   };
 }

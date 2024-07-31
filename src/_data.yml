@@ -1,5 +1,4 @@
 lang: en
-site: Working Titles
 
 menu_links:
   - href: "/contact"
@@ -34,6 +33,10 @@ experience:
 
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
-  site: "=site"
+  site: "Working Titles"
   title: "=title"
   lang: en
+  description: Hands-on coaching and advising for product leaders in tech
+  image: /images/mug.jpg
+  keywords: ["product leader", "productive executive", "tech companies", "tech startups"]
+  twitter: hirefrank
