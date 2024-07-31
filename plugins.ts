@@ -16,10 +16,6 @@ export default function () {
   return (site: Lume.Site) => {
     site.use(tailwindcss({
         options: {
-          // content: [
-          //   "./src/**/*.{md,vto}",
-          //   "./src/_includes/*.{md,vto}",
-          // ],
           theme: {
             colors: tailwindColors,
             fontFamily: {
