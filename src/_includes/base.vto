@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ it.title || metas.title }} - {{ metas.site }}</title>
+    <title>{{ if it.title == "Home" }}{{ it.site }}{{ else }}{{ it.title || metas.title }} - {{ metas.site }} {{ /if }}</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,7 +17,7 @@
     <header class="mx-auto py-4 px-6 {{ if '/' != url }} bg-gray-100 shadow{{ /if }}">
       <nav class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-center md:text-left">
         <a href="/" class="text-4xl font-light font-mark tracking-tight text-zinc-900">
-          {{ metas.site.toLowerCase() }}
+          {{ it.site.toLowerCase() }}
         </a>
         <ul class="flex items-center justify-end space-x-4 list-none hidden md:block">
           <li class="pl-2">
@@ -35,7 +35,7 @@
 
     <footer class="container max-w-4xl mx-auto text-gray-600 text-center my-4 flex flex-col">
       <div class="flex items-center justify-center">
-        <span>&copy; {{ new Date().getFullYear() }} {{ metas.site }}</span>
+        <span>&copy; {{ new Date().getFullYear() }} {{ it.site }}</span>
         <ul class="flex space-x-4 ml-4">
           {{- for link of it.menu_links }}
             <li>

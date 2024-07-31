@@ -1,6 +1,5 @@
 lang: en
-title: Working Titles
-description:
+site: Working Titles
 
 menu_links:
   - href: "/contact"
@@ -35,7 +34,6 @@ experience:
 
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
-  site: Working Titles
+  site: "=site"
   title: "=title"
-  image: /images/mug.jpg
   lang: en

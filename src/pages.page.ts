@@ -10,8 +10,9 @@ export default function* () {
   yield {
     url: "/index.html",
     content: welcome,
+    title: "Home",
     mug: true,
     indexable: true,
-    description: welcome
+    metas: { description: welcome }
   };
 }
