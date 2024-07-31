@@ -10,6 +10,85 @@ menu_links:
   - href: "https://linkedin.com/in/hirefrank"
     text: "LinkedIn"
 
+specialities:
+  - name: Leadership Coaching
+  - name: Product Strategy
+  - name: Organizational Design
+  - name: Go-to-Market & Pricing
+  - name: Product Feedback
+  - name: Recruiting
+
+career_highlights:
+  - years_served: "2021-24"
+    company_name: "Slack"
+    role_held: "VP of Product, Platform"
+    highlights:
+      - item: "Achieved target pipeline within 90 days of launch"
+      - item: "Directed go-to-market, pricing, and partner ecosystem strategies"
+      - item: "Completed 100+ customer calls to identify pain points and present roadmaps"
+
+  - years_served: "2020-21"
+    company_name: "InVision"
+    role_held: "VP of Product, Platform & Growth"
+    highlights:
+      - item: "Managed internal APIs and pricing strategy"
+      - item: "Served as Interim Head of Product"
+      - item: "Advised on organization design and product strategy"
+
+  - years_served: "2020"
+    company_name: "Kitchen Rodeo"
+    role_held: "Founder"
+    highlights:
+      - item: "Created interactive online cooking classes"
+      - item: "Raised over $175,000 for causes and neighborhood restaurants during the pandemic"
+
+  - years_served: "2018-20"
+    company_name: "Casper"
+    role_held: "VP of Digital Product"
+    highlights:
+      - item: "Developed organization design and processes for IPO execution"
+      - item: "Owned product roadmap and oversaw key launches"
+      - item: "Led 15+ person Digital Product team for D2C channels"
+
+  - years_served: "2016-18"
+    company_name: "Betterment"
+    role_held: "VP of Product"
+    highlights:
+      - item: "Drove 4.5x AUM and 2.7x customer growth"
+      - item: "Developed organization processes and oversaw key launches"
+      - item: "Led 20+ person PM, Design, and UX Research team"
+
+  - years_served: "2014-15"
+    company_name: "Cover/Velocity"
+    role_held: "Head of Product"
+    highlights:
+      - item: "Executed product roadmap for mobile payments startup"
+      - item: "Achieved $1MM per month transaction volume"
+      - item: "Managed 20+ person team across London and New York"
+
+  - years_served: "2011-13"
+    company_name: "Etsy"
+    role_held: "Group Product Manager"
+    highlights:
+      - item: "Built self-service advertising system for sellers"
+      - item: "Managed product roadmap for search and discovery"
+      - item: "Oversaw relaunch of core buyer-facing page resulting in 3.5% increase in conversions"
+
+  - years_served: "2006-10"
+    company_name: "Google"
+    role_held: "Senior UX Designer"
+    highlights:
+      - item: "Led UX design for Google Checkout"
+      - item: "Improved search and discovery features for Google News"
+      - item: "Designed original set of transit icons for Google Maps"
+
+  - years_served: "2002-05"
+    company_name: "The Washington Post"
+    role_held: "UX Desginer & Engineer"
+    highlights:
+      - item: "UI design for advertising and circulation systems"
+      - item: "Supported various systems for the newspaper"
+
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
   site: Working Titles

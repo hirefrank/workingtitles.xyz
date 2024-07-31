@@ -1,0 +1,64 @@
+---
+layout: page.vto
+title: About
+subtitle: 🙋‍♂️ Hi, I'm Frank Harris &mdash; an accomplished leader with over 20 years of experience leading high-performance software teams.
+url: /about/
+---
+
+<p>I've seen and felt the unique challenges product leaders face: constant ambiguity and loneliness at the top. As we climb, we find fewer peers to bounce ideas off. Yet, everyone needs support to excel — even writers have editors.</p>
+
+<p>That's why I created Working Titles. We're all works in progress, continuously refining our skills.</p>
+
+<p>Seeking a trusted sounding board? Navigating ambiguity? Adapting to industry shifts? You don't have to do it alone. We'll cut through the noise and sharpen your skills to amplify your impact.</p>
+
+<h3>Areas of Speciality</h3>
+<p>I'll tailor to your needs &mdash; no cookie-cutter process or rigid playbook.</p>
+
+{{# <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 md:my-10">
+  <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
+    <p class="text-center font-normal mb-0">Leadership Coaching</p>
+  </div>
+  <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
+    <p class="text-center font-normal mb-0">Product Strategy</p>
+  </div>
+  <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
+    <p class="text-center font-normal mb-0">Organizational Design</p>
+  </div>
+  <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
+    <p class="text-center font-normal mb-0">Go-to-Market & Pricing</p>
+  </div>
+</div> #}}
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 md:my-10">
+{{ for area of it.specialities }}
+  <div class="flex flex-col items-center justify-center h-24 bg-zinc-300">
+    <p class="text-center font-normal mb-0">{{ area.name }}</p>
+  </div>
+{{ /for }}
+</div>
+
+
+<div class="flex space-x-4 font-sans font-semibold mb-6 md:mb-10">
+  <a href="/services" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-700 transition shadow">
+      Book a free consultation
+  </a>
+  <a href="/contact" class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+      Contact me
+  </a>
+</div>
+
+<h3>Career Highlights</h3>
+<p>I'm a former engineer, designer, and product executive with early and late stage experience in B2B, B2C, and regulated industries. <a href="https://linkedin.com/in/hirefrank">LinkedIn</a></p>
+
+{{ for highlight of it.career_highlights }}
+<div class="mb-6">
+  <p class="font-semibold">
+      {{ highlight.role_held }}, {{ highlight.company_name }} <span class="float-right">{{ highlight.years_served }}</span>
+  </p>
+  <ul>
+      {{ for item of highlight.highlights }}
+      <li>{{ item.item }}</li>
+      {{ /for }}
+  </ul>
+</div>
+{{ /for }}

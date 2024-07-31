@@ -14,27 +14,21 @@
   </head>
   <body class="bg-neutral-200">
     <header class="mx-auto py-4 px-6 {{ if '/' != url }} bg-gray-100 shadow{{ /if }}">
-      <nav class="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="/" class="text-3xl font-light font-mark tracking-tight text-zinc-900">
+      <nav class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+        <a href="/" class="text-4xl md:text-3xl font-light font-mark tracking-tight text-zinc-900">
           {{ metas.site.toLowerCase() }}
         </a>
-        <ul class="flex items-center justify-end space-x-4 list-none">
+        <ul class="flex items-center justify-end space-x-4 list-none hidden md:block">
           <li class="pl-2">
             <button class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" data-cal-link="hirefrank/complimentary-consultation" data-cal-namespace="complimentary-consultation" data-cal-config='{"layout":"month_view"}'>
-                <span class="hidden md:inline">
-                  Book a free consultation
-                </span>
-                <span class="md:hidden">
-                  Free consultation
-                </span>
+              Book a free consultation
             </button>
           </li>
         </ul>
       </nav>
     </header>
 
-
-    <main class="px-6 container max-w-5xl mx-auto justify-center flex min-h-[calc(95vh-9rem)] md:min-h-[calc(100vh-10rem)] {{ if '/' != url }} pt-4 md:pt-8 {{ /if }} max-h-auto">
+    <main class="px-6 container max-w-5xl mx-auto justify-center flex min-h-[calc(97vh-10rem)] md:min-h-[calc(100vh-8.5rem)] {{ if '/' != url }} pt-4 md:pt-8 {{ /if }} max-h-auto">
       {{ content }}
     </main>
 
