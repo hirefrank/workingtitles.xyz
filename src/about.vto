@@ -14,22 +14,7 @@ url: /about/
 <h3>Areas of Speciality</h3>
 <p>I'll tailor to your needs &mdash; no cookie-cutter process or rigid playbook.</p>
 
-{{# <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 md:my-10">
-  <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
-    <p class="text-center font-normal mb-0">Leadership Coaching</p>
-  </div>
-  <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
-    <p class="text-center font-normal mb-0">Product Strategy</p>
-  </div>
-  <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
-    <p class="text-center font-normal mb-0">Organizational Design</p>
-  </div>
-  <div class="flex flex-col items-center justify-center h-32 bg-zinc-300">
-    <p class="text-center font-normal mb-0">Go-to-Market & Pricing</p>
-  </div>
-</div> #}}
-
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 md:my-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4 md:my-6">
 {{ for area of it.specialities }}
   <div class="flex flex-col items-center justify-center h-24 bg-zinc-300">
     <p class="text-center font-normal mb-0">{{ area.name }}</p>
@@ -37,28 +22,22 @@ url: /about/
 {{ /for }}
 </div>
 
-
-<div class="flex space-x-4 font-sans font-semibold mb-6 md:mb-10">
+<div class="flex space-x-4 font-sans font-semibold mb-6c md:mb-8">
   <a href="/services" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-700 transition shadow">
       Book a free consultation
   </a>
   <a href="/contact" class="bg-white font-sans hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-      Contact me
+      Contact
   </a>
 </div>
 
-<h3>Career Highlights</h3>
-<p>I'm a former engineer, designer, and product executive with early and late stage experience in B2B, B2C, and regulated industries. <a href="https://linkedin.com/in/hirefrank">LinkedIn</a></p>
+<h3>Experience</h3>
+<p>I'm a former engineer, designer, and product executive with early and late stage experience in B2B, B2C, and regulated industries.</p>
 
-{{ for highlight of it.career_highlights }}
-<div class="mb-6">
-  <p class="font-semibold">
-      {{ highlight.role_held }}, {{ highlight.company_name }} <span class="float-right">{{ highlight.years_served }}</span>
-  </p>
-  <ul>
-      {{ for item of highlight.highlights }}
-      <li>{{ item.item }}</li>
-      {{ /for }}
-  </ul>
-</div>
-{{ /for }}
+<ul>
+  {{ for item of it.experience }}
+  <li>{{ item.name }}</li>
+  {{ /for }}
+</ul>
+
+<p><a href="https://linkedin.com/in/hirefrank">LinkedIn Profile</a></p>

@@ -5,10 +5,10 @@ url: /contact/
 ---
 
 <p>Let me know how I can help. I respond to all messages within a day.
-<form action="https://api.staticforms.xyz/submit" method="post" class="space-y-4 text-xl">
-  <input type="text" name="name" placeholder="Your Name" class="border rounded p-2 w-full">
-  <input type="text" name="email" placeholder="Your Email" class="border rounded p-2 w-full" />
-  <textarea name="message" class="border rounded p-2 w-full h-40" placeholder="Your Message"></textarea>
+<form action="https://api.staticforms.xyz/submit" method="post" class="space-y-4 text-xl" onsubmit="return validateForm()">
+  <input type="text" name="name" placeholder="Your Name" class="border rounded p-2 w-full" required>
+  <input type="email" name="email" placeholder="Your Email" class="border rounded p-2 w-full" required>
+  <textarea name="message" class="border rounded p-2 w-full h-40" placeholder="Your Message" required></textarea>
   <input type="text" name="honeypot" style="display:none">
   <input type="hidden" name="accessKey" value="ef1f8ef0-0cd8-4fe1-95b8-30a4d8497b61">
   <input type="hidden" name="subject" value="Contact us form on Working Titles" />
@@ -16,3 +16,26 @@ url: /contact/
   <input type="hidden" name="redirectTo" value="/success">
   <input type="submit" value="Send" class="bg-sky-500 text-white rounded p-2 w-full cursor-pointer hover:bg-sky-700" />
 </form>
+
+<script>
+  function validateForm() {
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    // Simple email validation regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return false;
+    }
+
+    if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
+
+    return true; // Form is valid
+  }
+</script>
