@@ -1,9 +1,5 @@
 lang: en
 
-home:
-  intro: Coaching and advisory services to refine your story
-  welcome: Hands-on coaching and advising for product leaders in tech
-
 menu_links:
   - href: "/contact"
     text: "Contact"
@@ -19,7 +15,7 @@ specialties:
   - name: Recruiting
 
 experience:
-  - name: 5x VP of Product (Slack, InVision, Casper, Betterment, Cover/Velocity)
+  - name: 4x VP of Product (Slack, InVision, Casper, Betterment)
   - name: 4x working in Consumer (Casper, Betterment, Etsy, Google)
   - name: 3x working in B2B and Enterprise SaaS (Slack, InVision, Betterment)
   - name: 2x working in Ecommerce and Marketplaces (Casper, Etsy)
@@ -38,7 +34,7 @@ experience:
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
   site: Working Titles
-  description: "=home.welcome"
+  description: "="
   title: "=title"
   image: "=image"
   lang: en

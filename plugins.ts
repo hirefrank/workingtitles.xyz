@@ -1,11 +1,10 @@
 import tailwindcss from "lume/plugins/tailwindcss.ts";
+import tailwindColors from "tailwind/colors";
 import postcss from "lume/plugins/postcss.ts";
-import basePath from "lume/plugins/base_path.ts";
-import slugifyUrls from "lume/plugins/slugify_urls.ts";
-import resolveUrls from "lume/plugins/resolve_urls.ts";
 import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
-import tailwindColors from "tailwind/colors";
+import minifyHTML from "lume/plugins/minify_html.ts";
+import robots from "lume/plugins/robots.ts";
 
 import "lume/types.ts";
 
@@ -31,19 +30,13 @@ export default function () {
         }
       }))
       .use(postcss())
-      .use(basePath())
       .use(metas())
-      .use(resolveUrls())
-      .use(slugifyUrls())
-      .use(sitemap())
-      .copy("static", "./")
-      .mergeKey("extra_head", "stringArray")
-      .preprocess([".md"], (pages) => {
-        for (const page of pages) {
-          page.data.excerpt ??= (page.data.content as string).split(
-            /<!--\s*more\s*-->/i,
-          )[0];
-        }
-      });
-  };
+      .use(minifyHTML())
+      .use(robots())
+      .use(sitemap({
+        query: "indexable=true", // Select only pages with the indexable attribute as true
+        sort: "date=desc", // To sort by data in ascendent order
+      }))
+      .copy("static", "./");
+  }
 }

@@ -12,7 +12,7 @@ h3 { @apply text-xl md:text-2xl font-sans font-semibold my-4 md:my-6 leading-nor
 article p { @apply text-xl md:text-2xl mb-4 md:mb-6 font-sans font-light leading-normal }
 
 h3 + p {
-  @apply text-xl md:text-2xl mb-6 font-sans font-light leading-normal -mt-2 md:-mt-4;
+  @apply text-xl md:text-2xl mb-0 font-sans font-light leading-normal -mt-2 md:-mt-4;
 }
 
 article p a {
@@ -24,7 +24,7 @@ article p a:hover {
 }
 
 article ul {
-  @apply mb-4 md:mb-6
+  @apply mb-4 md:mb-6 mt-4
 }
 article li {
   @apply list-disc text-xl md:text-2xl ml-10 font-sans font-light leading-normal
