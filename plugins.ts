@@ -31,7 +31,7 @@ export default function () {
       }))
       .use(postcss())
       .use(metas())
-      .use(minifyHTML())
+      // .use(minifyHTML())
       .use(robots())
       .use(sitemap({
         query: "indexable=true", // Select only pages with the indexable attribute as true
