@@ -3,9 +3,8 @@ import plugins from "./plugins.ts";
 
 const site = lume({
   src: "./src",
-  server: {
-    page404: "./src/404/",
-  },
+  location: new URL("https://workingtitles.xyz"),
+
 });
 
 site.use(plugins());
